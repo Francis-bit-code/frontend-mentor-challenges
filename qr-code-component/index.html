@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Fonte do H2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fonte do p -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: hsl(212, 45%, 89%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+      }
+
+      .container-pai {
+        display: flex;
+        width: 100%; /* Ocupa 100% da largura disponível */
+        height: 100vh; /* Ocupa 100% da altura da viewport */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+      }
+
+      .box {
+        background-color: hsl(0, 0%, 100%); /* Fundo branco */
+        border-radius: 20px; /* Bordas arredondadas */
+        padding: 10px; /* Espaçamento interno */
+        text-align: center; /* Centraliza o texto */
+        /* max-width: 300px; /* Largura máxima para responsividade */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        max-width: 1440px;
+        width: 90;
+      }
+
+      /* Ajustes para desktop (1440px) */
+      @media (min-width: 1440px) {
+        .box {
+          max-width: 320px; /* Aumenta um pouco o tamanho máximo */
+        }
+      }
+
+      /* Ajustes para telas maiores (tablets e desktops) */
+      @media (min-width: 600px) {
+        .box {
+          max-width: 400px; /* Aumenta o tamanho máximo */
+        }
+      }
+
+      #img {
+        width: 280px;
+        border-radius: 10px;
+      }
+
+      h2 {
+        font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+        font-weight: 700px;
+        font-style: normal;
+        color: hsl(218, 44%, 22%);
+      }
+
+      /* Ajustes do título para telas maiores */
+      @media (min-width: 600px) {
+        h2 {
+          font-size: 1.8rem; /* Tamanho maior para tablets e desktops */
+        }
+      }
+      p {
+        font-size: 15px;
+        color: hsl(220, 15%, 55%);
+        margin-bottom: 20px;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      /* Ajustes do parágrafo para telas maiores */
+      @media (min-width: 600px) {
+        p {
+          font-size: 1rem; /* Tamanho maior para tablets e desktops (16px) */
+        }
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-pai">
+      <div class="box">
+        <img src="images/image-qr-code.png" alt="image-qr-code" id="img" />
+        <h2>
+          Improve your front-end <br />
+          skills by building projects
+        </h2>
+        <p>
+          Scan the QR code to visit Frontend <br />
+          Mentor and take your coding skills to <br />
+          the next level
+        </p>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Francisco Diássis</a>.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
